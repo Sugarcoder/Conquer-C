@@ -1,0 +1,4 @@
+%d = Integer
+%f = Floating-point
+%c = Character
+%s = String
