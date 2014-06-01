@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>    /* Need to add this if using strcpy() function*/
+
+main()
+
+{
+
+    char Kid1[12];
+
+    char Kid2[] = "Maggie";
+
+    char Kid3[4] = "Lucy";
+
+    char Hero1 = "Superman";
+
+    char Hero2[20] = "Wolverine";   // This leaves extra space in the string
+
+
+
+    Kid1[0] = 'Z';    // Kid1 is defined character by character
+    Kid1[1] = 'o';
+    Kid1[2] = 'e';
+    Kid1[3] = '\0';  // 0 is the 'null' and lets C knows that this string ends
+
+
+    strcpy(Hero1, "Superman is a Hero");
+
+
+    printf("%s's favorite hero is %s.\n", Kid1, Hero1);
+
+    return 0;
+
+}
