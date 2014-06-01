@@ -1,0 +1,33 @@
+// Example Program
+
+/* This is a sample program */
+
+#include <stdio.h>
+
+main()
+{
+    // Set up the variables, as well as define a few.
+
+    char firstInitial, middleInitial;
+    int number_of_pencils;
+    int number_of_notebooks;
+    float pencils = 0.23;
+    float notebooks = 2.89;
+    float lunchbox = 4.99;
+
+    // This is the info for a child
+
+    firstInitial = 'A';
+    middleInitial = 'J';
+
+    number_of_pencils = 10;
+    number_of_notebooks = 3;
+
+
+    // After we define everything, we write a method that calls it.
+
+    printf("%c%c needs %d pencils, %d notebooks, and 1 lunchbox.\n",
+           firstInitial, middleInitial, number_of_pencils, number_of_notebooks);
+    printf("The total cost is $%.2f\n\n", number_of_pencils*pencils + number_of_notebooks*notebooks + lunchbox);
+
+}
