@@ -1,0 +1,19 @@
+/* Enter a bonus amount, then the computer will calculate the amount left over 
+after you donate to charity. */
+
+
+#include <stdio.h>
+
+main()
+{
+
+    float a,b;
+
+    printf("How much of a bonus did you get?\n");
+    scanf(" %f", &a);
+
+    b = .85 * a;
+    printf("If you give 15 percent to charity, you will still ");
+    printf("have %.2f", b);
+    return 0;
+}
