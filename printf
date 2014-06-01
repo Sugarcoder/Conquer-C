@@ -1,0 +1,8 @@
+/* Prints a message on the screen */
+
+#include <stdio.h>
+main()
+{
+printf("I love you\n");
+return 0;
+}
