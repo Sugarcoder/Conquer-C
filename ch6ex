@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>     /* stdio.h = standard io = used because of the printf() function */
 #include <string.h>    /* Need to add this if using strcpy() function*/
 
 main()
