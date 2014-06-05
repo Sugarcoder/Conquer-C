@@ -1,0 +1,11 @@
+/* #define preprocessor defines constants. */ 
+
+#define CONSTANT constantDefinition           /* Use uppercase for the constant name - ex. CONSTANT */
+
+/* Examples below */ 
+
+#define AGELIMIT 21
+
+#define MYNAME "Paula Abdul"
+
+#define PI 3.14159
