@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define CURRENTYEAR 2014
+#define CURRENTYEAR 2014.
 
 main()
 {
