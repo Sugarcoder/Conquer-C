@@ -1,0 +1,16 @@
+(total  <= 3800.0) ? (total *= 1.10): (total *= 1.05); 
+
+
+// Better to write it as: total *= {total <= 3800.0} ? {1.10} : {1.05};
+
+
+// The above is the same as...
+
+
+if ( total <= 3800.0)
+    {total *= 1.10; } 
+else 
+    {total *= 1.05; }
+
+
+
