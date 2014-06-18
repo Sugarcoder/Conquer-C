@@ -3,6 +3,9 @@
 
 // Better to write it as: total *= {total <= 3800.0} ? {1.10} : {1.05};
 
+// Example: printf("I ate %d pear%s\n", numPear, (numPear>1) ? ("s.") : ("."));    = If pears are > 1, it will say "I ate 4 pears."
+
+
 
 // The above is the same as...
 
