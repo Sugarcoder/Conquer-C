@@ -1,0 +1,29 @@
+// Increment = count++;   OR   ++count;      
+
+// Decrement = count--;   OR   --count;
+
+
+// If operators are on the left, it is called "prefix increment". 
+// If operators are on the right, it is called "postfix increment".
+
+
+
+#include <stdio.h>
+
+main()
+
+{
+
+    int ctr = 0;
+
+    printf("Counter is at %d.\n", ++ctr);
+    printf("Counter is at %d.\n", ++ctr);
+    printf("Counter is at %d.\n", ++ctr);
+
+    printf("Counter is at %d.\n", --ctr);
+    printf("Counter is at %d.\n", --ctr);
+    printf("Counter is at %d.\n", --ctr);
+
+    return 0;
+
+}
