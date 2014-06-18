@@ -1,0 +1,21 @@
+// To find out how much memory integers and floating points are using, use "sizeof()"
+
+
+// i = sizeof(int);  =  Puts the size of integers into i
+
+// f = sizeof(float);  = Puts the size of floats into f
+
+
+// Example:
+
+char name[] = "Ruth Claire";
+
+int i = 7;
+
+printf("The size of i is %d. \n", sizeof(i));
+
+printf("The size of name is %d. \n", sizeof(name));
+
+
+
+// The length and size of a string are two different values.
