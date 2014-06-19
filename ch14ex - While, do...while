@@ -1,0 +1,76 @@
+// For the 'while' loop, never put the ; after the bracket }
+
+// You avoid infinite loops by making sure the body of the 'while' loop changes something in the condition, 
+// so it eventually becomes false.
+
+// If the condition is already false, the 'while' loop will not execute.
+
+
+
+#include <stdio.h>
+
+main()
+
+{
+    int ctr = 0;
+
+    while (ctr < 5)
+    {
+        printf("Counter is at %d.\n", ++ctr);
+    }
+
+
+    while (ctr > 5)
+    {
+        printf("Counter is over %d.\n", --ctr);
+    }
+
+    return 0;
+
+}
+
+
+
+// 'ctr' is initially set to 0.
+
+
+
+
+
+
+#include <stdio.h>
+
+main()
+
+{
+
+    float num1, num2, result;
+    char choice;
+
+    do
+    {
+        printf("Enter your first number to multiply: ");
+        scanf(" %f", &num1);
+
+        printf("Enter your second number to multiply: ");
+        scanf(" %f", &num2);
+
+        result = num1 * num2;
+
+        printf("%.2f times %.2f equals %.2f\n\n", num1, num2, result);
+
+        printf("Do you want to enter another pair of numbers to multiply (Y/N): ");
+        scanf(" %c", &choice);
+
+        if (choice == 'N')
+        {
+            choice = 'N';
+        }
+
+    }
+
+    while (choice != 'N' && choice != 'n');
+
+    return 0;
+
+}
