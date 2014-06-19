@@ -1,0 +1,54 @@
+// 'for' loop = You can specify how many times you want to loop
+
+// ' while' loop = Continues looping as long as the condition is true
+
+
+// Examples: 
+
+for (ctr = 1; ctr <= 5; ctr++)
+  {
+      printf("Counter is at %d.\n", ctr);
+  }
+  
+  
+
+
+for (cDown = 10; cDown > 0; cDown--)
+  {
+     printf("%d.\n, cDown);
+  }
+
+printf("Blast off!\n");
+
+
+
+for (i = 1; 1 < 18; i +=3)
+  {
+     printf("%d ", i);      // Prints 1, 4, 7, 10, 13, 16
+  }
+  
+  
+
+
+
+// If you put a 'for' inside another 'for', the inner loop executes as many times as the outer loop dictates.
+
+// Example:
+
+
+
+for (outer = 1; outer <= 3; outer++)
+  {
+      for (inner = 1; inner <= 5; inner++)
+      {
+           printf("%d ", inner)
+      }
+        printf("\n");
+  }
+  
+
+
+
+
+
+
