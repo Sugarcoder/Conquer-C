@@ -1,0 +1,19 @@
+// The "break" and "continue" statements let you control loops for those times
+// when you want to quit a loop early or repeat a loop sooner.
+
+// "Break" usually appears inside an IF statement
+
+// Example:
+
+for (i = 0; i < 10, i++);
+    {
+        printf("%d", i)
+        if ( i == 4)
+        {
+            break;
+        }
+    }
+    
+
+
+
