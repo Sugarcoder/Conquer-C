@@ -1,0 +1,64 @@
+#include <stdio.h>
+# include <string.h>
+
+main()
+
+{
+    int ctr, numMovies, rating, favRating, leastRating;
+    char movieName[40], favorite[40], least[40];
+
+    favRating = 0;
+    leastRating = 10;
+
+    do
+    {
+        printf("How many movies have you seen this year? ");
+        scanf(" %d", &numMovies);
+
+        // If the user enters 0 or a negative number, the program will tell them to enter a positive number instead.
+
+        if (numMovies < 1)
+            printf("No movies! How can you rank them? Try again!\n\n");
+
+    }
+
+
+        while (numMovies < 1);
+
+
+    for (ctr = 1; ctr <= numMovies; ctr++)
+    {
+        // Get the number of the movie and the user's rating
+
+        printf("\nWhat was the name of the movie? ");
+        printf("(1-word titles only!) ");
+        scanf(" %s", movieName);
+
+        printf("On a scale of 1 to 10, what would you rate it?");
+        scanf("%d", &rating);
+
+        // Check whether its their best rated movie so far
+
+        if (rating > favRating)
+        {
+            strcpy(favorite, movieName);
+            favRating = rating;
+        }
+
+        // Check whether its their worst rated movie so far
+
+        if (rating < leastRating)
+        {
+            strcpy(least, movieName);
+            leastRating = rating;
+        }
+
+    }
+
+    printf("\nYour favorite movie was %s\n", favorite);
+    printf("\nYour least favorite movie was %s\n", least);
+
+
+    return 0;
+
+}
