@@ -17,3 +17,4 @@ for (i = 0; i < 10, i++);
 
 
 
+// 'Break' can only end in "while", "do...while" or "for" loops.
