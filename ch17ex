@@ -1,0 +1,64 @@
+// "switch" = good for user interface, when the user has multiple choices to enter.
+
+
+// "case" determines the course of action based on the value inputted.
+
+
+/* "default" keyword (similar to 'else') lets the user know they inputted the wrong answer.
+It is a good habit to use 'default' in 'switch' statements. */
+
+
+
+/* This program presents a menu with choices,
+gets the users choice and then uses the 'switch' statement to execute
+lines of codes based on their choice. */
+
+
+#include <stdio.h>
+#include <string.h>
+
+main()
+
+{
+    int choice;
+
+    printf("WHat do you want to do?\n");
+    printf("1. Add new contact\n");
+    printf("2. Exit existing contact\n");
+    printf("3. Call contact\n");
+    printf("4. Text contact\n");
+    printf("5. Exit\n");
+
+    do
+    {
+        printf("Enter your choice: ");
+        scanf(" %d", &choice);
+        switch (choice)
+            {
+                case (1): printf("\nTo add, you will meed the contact's\n");
+                          printf("First name, last name and number\n");
+                          break;
+
+                case (2): printf("\nGet ready to enter the name of the\n");
+                          printf("contact you wish to change.\n");
+                          break;
+
+                case (3): printf("\nWhich contact do you wish to call?\n");
+                          break;
+
+                case (4): printf("\nWhich contact do you wish to text?\n");
+                          break;
+
+                case (5): exit (1);     // Exits the program
+
+
+                default:  printf("\n%d is not a valid choice\n");
+                          printf("Try again.\n");
+                          break;
+            }
+    }
+    while ((choice < 1) || (choice > 5));
+
+    return 0;
+
+}
