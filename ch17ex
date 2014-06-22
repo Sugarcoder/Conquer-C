@@ -15,7 +15,7 @@ lines of codes based on their choice. */
 
 
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>                    // You need to use this header if you use 'exit()'
 
 main()
 
