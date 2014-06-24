@@ -1,0 +1,58 @@
+/* The 'break' statement in 'switch' makes sure that only one case executes. 
+Otherwise, the switch would fall through the other case statements. */
+
+// The 'break' and 'default' statement isn't needed as long as 'default' appears at the end of the switch. 
+
+
+/* The program below displays a menu of choices (3 different decades), gets the user's choice,
+and then presents a secondary menu (sports, entertainment, and politics).
+
+When the user makes his/her second choice, it prints a list of key info from that specific decade in that specific category. */
+
+
+
+#include <stdio.h>
+#include <stdlib.h> 
+
+main()
+{
+    int choice1;
+    int choice2;
+    
+    printf("What do you want to see?\n");
+    printf("1. The 1980s\n");
+    printf("2. The 1990s\n");
+    printf("3. The 200s\n");
+    printf("4. Quit\n");
+    
+    do
+    {
+        printf("Enter your choice: ");
+        scanf(" %d", &choice1);
+        switch (choice1)
+        {
+            case (1)
+            {
+                printf("\n\nWhat would you like to see?\n");
+                printf("1. Baseball\n");
+                printf("2. The movies\n");
+                printf("3. The Presidents\n");
+                printf("4. Quit\n"); 
+                
+                printf("enter your choice: ");
+                scanf(" %d", &choice2);
+                
+                if (choice2 == 1)
+                {
+                    printf("\n\nWorld Series Champions of the 1980s\n");
+                    printf("Philidelphia's Phillies\n");
+                    
+                }
+                
+                
+                
+            }
+        }
+        
+    }
+}
