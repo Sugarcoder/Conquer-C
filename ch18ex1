@@ -1,0 +1,51 @@
+/* getchar() = is an 'input' that can return a value 
+that won't work in a char data type, so you are safe if you use int. */
+
+
+/* getchar() instructs C to accept input into a buffer, 
+which is a memory area reserved for input.
+The buffer isn't released until a user presses 'Enter', 
+and then the buffer's contents are released a character at a time. */
+
+
+printf("What are your two initials?\n");
+firstInit = getchar();
+n1 = getchar();                // n1 exists only to hold the in-between newline.
+lastInit = getchar();
+n1 = getchar();
+
+
+
+/* You can also request the two initials by requiring the Enter keypress 
+after the user enters the two initials. */
+
+
+printf("What are your two initials?\n");
+firstInit = getchar();
+lastInit = getchar();
+getchar();
+
+
+
+/* getch() is unbuffered, and is faster. 
+It helps eliminate the leftover Enter keypress that getchar() leaves. 
+The drawback is that the user can't press the Backspace key to correct the bad input.*/
+
+
+
+printf("What are your two initials?\n");
+firstInit = getch();
+lastInit = getch();
+
+
+// If you use getch(), you must use putch().
+
+
+printf("What are your two initials?\n");
+firstInit = getch();
+
+putch(firstInit);
+
+lastInit = putch();
+
+putch(lastInit);
