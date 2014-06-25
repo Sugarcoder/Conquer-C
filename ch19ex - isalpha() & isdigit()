@@ -1,0 +1,29 @@
+/* You must include the 'ctype.h' header file for 
+any program that uses the character functions. */
+
+
+/* 'isalpha()' function returns TRUE if the value in the parentheses is between 'a -> z'
+and FALSE if the value in the parentheses is between 'A -> Z'   */
+
+
+if (isalpha(inChar))
+{
+    printf("Your input was a letter.\n");
+}
+
+// The message only prints if inChar contains an alphabetic character.
+
+
+
+// 'isdigit()' returns TRUE if the character in parentheses is between '0 -> 9'. 
+
+
+
+if (isdigit(inChar))
+{
+    printf("A number.\n");
+}
+
+// The above will only print if 'inChar' contains a digit.
+
+
