@@ -1,1 +1,8 @@
+// getchar() = gets a single character from the keyboard.
+
+// putchar() = sends a single character to the screen.
+
+
 #include <stdio.h>
+#include <string.h>
+
