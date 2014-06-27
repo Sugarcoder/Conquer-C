@@ -1,0 +1,42 @@
+/*  'isupper()' and 'islower()' functions tell you 
+whether a variable contains an upper or lowercase value. */
+
+// isupper() keeps you from having to write long 'if' statements.
+
+// Instead of putting:
+
+if ((inLetter >= 'A') && (inLetter <= 'Z'))
+{
+    printf("Letter is uppercase.\n");
+}
+
+// Just put this instead:
+
+if (isupper(inLetter))
+{
+    printf("Letter is uppercase.\n");
+}
+
+
+
+/* This program askes a user for a username and a password. 
+It tests whether their password has an uppercase letter, lowercase letter and a digit.
+If it does not, it suggests them to consider a more secure password. */
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+
+main()
+{
+    int i;
+    int hasUpper, hasLower, hasDigit;
+    char user[25], password[25];
+    
+    
+    
+    
+}
