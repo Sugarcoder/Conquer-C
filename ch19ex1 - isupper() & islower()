@@ -75,6 +75,21 @@ main()
     }
     
     
+    
+    
+/* The 'if' portion will only execute if all three variables below are 1, 
+and the variables will only equal 1 if the appropriate characters were each found. */
+
+
+if ((hasDigit) && (hasUpper) && (hasLower))
+{
+    printf("\n\nExcellent work, %s, \n", user);
+}
+
+    
+    
+    
+    
 }
 
 
