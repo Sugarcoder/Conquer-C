@@ -1,0 +1,17 @@
+// strcat() = Takes one string and appends it to another string.
+// strcat = string concatenation
+
+
+
+char first[25] = "Katniss";
+char last[25] = " Everdeen";
+strcat(first, last);        // Adds last to the end of first
+printf("I am %s\n", first);
+
+
+
+
+/* strcat() requires two string arguments. 
+strcat() tacks the second string onto the end of the first one. 
+
+Make sure the first array is large enough to hold both strings. */
