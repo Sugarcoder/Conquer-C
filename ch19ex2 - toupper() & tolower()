@@ -1,0 +1,35 @@
+// toupper() = Returns its parentheses argument as uppercase.
+
+// tolower() = Returns its parentheses argument as lowercase.
+
+
+
+// The following program segment prints 'yes' or 'no', depending on the user's input.
+
+
+if ((userInput) == 'Y' || (userInput == 'y'))
+{
+    printf("yes\n");
+}
+
+
+else 
+{
+    printf("no\n");
+}
+
+
+
+
+
+if (toUpper(userInput) == 'Y')      // Only need to test for uppercase
+    
+{
+    printf("yes\n");
+}
+
+
+else 
+{
+    printf("no\n");
+}
