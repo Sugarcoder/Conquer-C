@@ -19,7 +19,7 @@ if (isupper(inLetter))
 
 
 
-/* This program askes a user for a username and a password. 
+/* This program asks a user for a username and a password. 
 It tests whether their password has an uppercase letter, lowercase letter and a digit.
 If it does not, it suggests them to consider a more secure password. */
 
