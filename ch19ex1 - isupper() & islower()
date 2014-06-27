@@ -1,14 +1,19 @@
-/*  'isupper()' and 'islower()' functions tell you 
+/*  'isupper()' and 'islower()' functions tell you
 whether a variable contains an upper or lowercase value. */
 
 // isupper() keeps you from having to write long 'if' statements.
 
+
+
 // Instead of putting:
+
 
 if ((inLetter >= 'A') && (inLetter <= 'Z'))
 {
     printf("Letter is uppercase.\n");
 }
+
+
 
 // Just put this instead:
 
@@ -19,7 +24,7 @@ if (isupper(inLetter))
 
 
 
-/* This program asks a user for a username and a password. 
+/* This program asks a user for a username and a password.
 It tests whether their password has an uppercase letter, lowercase letter and a digit.
 If it does not, it suggests them to consider a more secure password. */
 
@@ -35,23 +40,23 @@ main()
     int i;
     int hasUpper, hasLower, hasDigit;
     char user[25], password[25];
-    
+
     // Initialize all 3 test variables to 0 (ex. false)
-    
+
     hasUpper = hasLower = hasDigit = 0;
-    
+
     printf("What is your username? ");
     scanf(" %s", user);
-    
-    
+
+
     printf("Please create a password: ");
     scanf(" %s", user);
-    
-    
+
+
     /* This loop goes through each character of the password and tests
     whether it is a digit, uppercase letter, then lowercase letter. */
-    
-    
+
+
     for (i = 0; i < strlen(password) ; i++)
     {
         if (isdigit(password[i]))
@@ -59,24 +64,22 @@ main()
             hasDigit = 1;
             continue;
         }
-        
-        
+
+
         if (isupper(password[i]))
         {
             hasUpper = 1;
             continue;
         }
-        
-        
+
+
         if (islower(password[i]))
         {
             hasLower = 1;
         }
     }
-    
-    
-    
-    
+
+
 /* The 'if' portion will only execute if all three variables below are 1, 
 and the variables will only equal 1 if the appropriate characters were each found. */
 
@@ -84,12 +87,22 @@ and the variables will only equal 1 if the appropriate characters were each foun
 if ((hasDigit) && (hasUpper) && (hasLower))
 {
     printf("\n\nExcellent work, %s, \n", user);
+    printf("Your password has upper and lowercase ");
+    printf("letters and a number.");
 }
 
-    
-    
-    
-    
+
+else 
+{
+    printf("\n\nYou should consider a new password, %s, \n", user);
+    printf("One that uses upper and lowercase letters and a number.\n");
+}
+
+
+return(0);
+
+
+
 }
 
 
