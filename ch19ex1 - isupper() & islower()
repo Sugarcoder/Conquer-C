@@ -37,6 +37,10 @@ main()
     char user[25], password[25];
     
     
+    // Initialize all 3 test variables to 0 (ex. false)
+    
+    hasUpper = hasLower = hasDigit = 0;
+    
     
     
 }
