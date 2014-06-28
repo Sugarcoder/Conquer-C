@@ -1,0 +1,24 @@
+// If you use a math function, you need to add 'math.h' header file, along with 'stdio.h'
+
+
+// floor() = "push down" non-integers to their next-lower integer values  (floor function)
+
+// ceil() = "push up" non-integers to their next-higher integer valies  (ceiling function)
+
+// floor() and ceil() each returns a float value.
+
+
+
+
+// Example:
+
+
+change = amtPaid - cost;  // These are all floating-point values
+dollars = floor(change);
+printf("The change includes %f dollar bills.\n", dollars);
+
+
+lowVal1 = floor(18.5);      // Stores 18.0
+lowVal2 = floor(-18.5);     // Stores -19.0
+hiVal1 = ceil(18.5);        // Stores 19.0
+hiVal2 = ceil(-18.5);       // Stores -18.0
