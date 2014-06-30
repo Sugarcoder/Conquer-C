@@ -1,0 +1,101 @@
+/* fabs() = returns the floating-point absolute value.
+
+The absolute value of a number, whether positive or negative,
+is the positive version of the number.  */
+
+
+// Example:
+
+printf("Absolute value of 25.0 is %.0f\n", fabs(25.0));
+printf("Absolute value of -25.0 is %.0f\n", fabs(-25.0));
+
+
+
+// pow() = raises a value to a power
+
+// sqrt() = returns the square root of a value
+
+
+
+// Example:
+
+
+printf("10 raised to the third power is %.0f.\n", pow(10.0, 3.0));
+
+printf("The square root of 64 is %.0f.\n", sqrt(64));
+
+
+/* Other math functions:
+
+cos() = Returns the cosine of the angle
+
+sin() = Returns the sine of the angle
+
+tan() = Returns the tangent of the angle
+
+acos() = Returns the arc cosine of the angle
+
+asin() = Returns the arc sine of the angle
+
+atan() = Returns the arc tangent of the angle   */
+
+
+
+
+// Use this formula to supply an argument in degrees instead of radians:
+
+radians = degrees * (3.14159 / 180.0);
+
+
+
+
+
+/* This program demonstrates the math functions from C's math.h library. */
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+
+main()
+{
+    printf("It's time to do your math homework!\n");
+
+
+    printf("Section 1: Square Roots\n");
+
+    printf("The square root of 49.0 is %.1f\n", sqrt(49.0));
+    printf("The square root of 149.0 is %.1f\n", sqrt(149.0));
+    printf("The square root of 0.149 is %.2f\n", sqrt(0.149));
+
+
+    printf("\n\nSection 2: Powers\n");
+
+    printf("4 raised to the 3rd power is %.1f\n", pow(4.0, 3.0));
+    printf("7 raised to the 5th power is %.1f\n", pow(7.0, 5.0));
+    printf("34 raised to the 1/2 power is %.1f\n", pow(34.0, 0.5));
+
+
+
+    printf("\n\nSection 3: Trigonometry\n");
+
+    printf("The cosine of a 60-degree angle is %.3f\n", cos((60 * (3.14159 / 180.0))));
+    printf("The sine of a 90-degree angle is %.3f\n", sin((90 * (3.14159 / 180.0))));
+    printf("The tangent of a 75-degree angle is %.3f\n", tan((75 * (3.14159 / 180.0))));
+
+    printf("The arc cosine of a 45-degree angle is %.3f\n", acos((45 * (3.14159 / 180.0))));
+    printf("The arc sine of a 30-degree angle is %.3f\n", asin((30 * (3.14159 / 180.0))));
+    printf("The arc tangent of a 15-degree angle is %.3f\n", atan((15 * (3.14159 / 180.0))));
+
+
+
+    printf("\nSection 4: Log functions\n");
+    printf("e raised to 2 is %.3f\n", exp(2));
+    printf("The natural log of 5 is %.3f\n", log(5));
+    printf("The base-10 log of 5 is %.3f\n", log10(5));
+
+
+    return(0);
+
+}
