@@ -1,0 +1,76 @@
+/* An array of characters is just a list of characters that has a name.
+
+An array of integers is just a list of integers that has a name.
+
+An array of floating-point values is just a list of floating-point values that has a name.  */
+
+
+
+// ALL arrays contain values called "elements" (can only contain elements that are the same type)
+
+
+// Example:
+
+int i;   /* Defines a non-array variable. */
+
+int i[25];  /* Defines the array. */
+
+
+// To define an array, you must add brackets. []
+
+
+// To initialize a character array with an initial string:
+
+char name[6] = "Italy";  /* Leave room for the null! */
+
+
+
+
+/* You can initialize an array one element at a time 
+when you define an array by enclosing the array's data element 
+in braces and following the array name with an equals sign. */
+
+
+// Example (defines an integer array and initializes it with five values:
+            
+            
+int vals[5] = {10, 40, 70, 90, 120};     // The brackets indicate subscripts
+
+
+
+// There is no null zero at the end of the array 
+// because null zeroes terminate strings stored in character arrays.
+
+
+
+// Example (Defines and initializes 2 arrays, a floating-point array and a double floating-point array:
+            
+float money[10] = {6.23, 2.45, 8.01, 2.97, 6.41};
+
+double annualSal[6] = {43565.78, 75674.23, 90001.35, 10923.45, 39845.82};
+
+
+
+// Example (Define and initialize a character array with individual characters:
+            
+char grades[5] = {'A', 'B', 'C', 'D', 'F'};
+
+
+
+// nums = number (integer numeric array)
+
+
+
+// Always specify the number of subscripts when you define an array.
+
+
+
+/* Exception: If you assign an initial value or set of values to the array 
+at the time you define an array, you can leave the brackets empty.  */
+
+
+// Examples: 
+
+int age[5] = {5, 27, 65, 40, 92};
+
+int age[] = {5, 27, 65, 40, 92};
