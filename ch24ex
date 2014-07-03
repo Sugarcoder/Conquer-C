@@ -1,0 +1,28 @@
+// As with any type of variable, you must define a pointer variable before you can use it.
+
+// & = Address-of operator
+
+// * = Dereferencing operator
+
+
+
+// To define an integer pointer variable and a floating-point variable, you simply insert a *:
+
+int * pNum;   /* Defines two pointer variables. "p" stands for pointer.  */
+
+float * pValue;   
+
+
+
+// Pointer variables hold addresses of other variables. 
+
+
+
+int age = 19;     // Stores 19 to age
+
+int * pAge = &age;    // Links up the pointer
+
+
+
+
+ 
