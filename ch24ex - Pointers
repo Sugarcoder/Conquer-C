@@ -1,3 +1,11 @@
+// Pointer = A variable that holds the location of another variable.
+
+// When a pointer variable holds the address of another variable, it essentially points to that variable.
+
+
+
+
+
 // As with any type of variable, you must define a pointer variable before you can use it.
 
 // & = Address-of operator
@@ -12,10 +20,6 @@ int * pNum;   /* Defines two pointer variables. "p" stands for pointer.  */
 
 float * pValue;   
 
-
-
-// Pointer variables hold addresses of other variables. 
-// When a pointer variable holds the address of another variable, it essentially points to that variable.
 
 
 
