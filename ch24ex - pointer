@@ -15,6 +15,7 @@ float * pValue;
 
 
 // Pointer variables hold addresses of other variables. 
+// When a pointer variable holds the address of another variable, it essentially points to that variable.
 
 
 
