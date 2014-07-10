@@ -1,0 +1,12 @@
+/* Heap = Unused memory in your computer.
+
+Many times, you'll want to access the heap, because
+your program will need more memory than you
+initially defined in variables and arrays.
+
+The only way to access data stored in heap memory
+is through pointer variables.
+
+Allocated Heap = The heap memory used by your program
+
+Free Heap = Unallocated heap memory     */
