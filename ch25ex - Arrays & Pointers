@@ -1,0 +1,50 @@
+// Array is a special kind of pointer.
+
+// Array names are known as pointer constants.
+
+// You can print the first value in the array like this:
+
+printf("The first value is %d.\n", vals[0]);
+
+
+// This is the second and third array values are:
+
+printf("The second value is %d.\n", vals[1]);
+printf("The third value is %d.\n", vals[2]);
+
+
+
+
+// "pName" is a pointer variable, used like this:
+
+char name[] = "Mary Jane";    // Name points to M
+char * pName = "Mary Jane";   // Name points to M
+
+
+
+
+// This is the safe way to store characters in a string (by using a pointer):
+
+char input [81];   // Holds a string as long as 80 characters
+
+char * iptr = input;   // Also could have done char * ipts = &input[0];
+
+
+
+
+// use "fgets()" if you want to limite the number of characters accepted from the user.
+
+// Example:
+
+fgets(iptr, 81, stdin);          // Gets up to 80 characters and add null zero (iptr is a pointer).
+
+
+// You can use "fgets()" to read strings from data files.
+
+
+
+
+// You can assign the pointer string literals. 
+// Example:
+
+iptr = "Mary Jane Matthews";
