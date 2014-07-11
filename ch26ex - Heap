@@ -10,3 +10,16 @@ is through pointer variables.
 Allocated Heap = The heap memory used by your program
 
 Free Heap = Unallocated heap memory     */
+
+
+
+Two Heap functions: malloc() and free().  malloc() = memory allocate
+
+MUST INCLUDE <stlib.h> whenever you use malloc() and free()    */
+
+
+
+int * temp;   // Will point to the first heap value
+
+
+temps = (int *) malloc(10 * sizeof(int));     // If you just want 10 bytes, you could enter malloc(10);
