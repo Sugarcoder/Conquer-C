@@ -1,0 +1,29 @@
+// How to allocate an array of 50 pointers:
+
+int * temps[50];        /* 50 integer pointers */
+
+// The first pointer is called temps[0], second pointer is called temps[1], etc.
+
+
+// Allocating and deallocating Heap memory Example:
+
+for (ctr = 0; ctr < 50; ctr++)
+{
+    puts("How many readings for the city?")
+    scanf(" %d", &num);
+
+
+// Allocate that many heap values
+    temps[ctr] = (int *)malloc(num * sizeof(int));
+
+
+// This next section of code would ask for
+// each temperature reading for the city. Need to deallocate Heap memory when done.
+
+}
+
+
+for (ctr = 0; ctr < 50; ctr++)
+{
+    free(temps[ctr]);
+}
