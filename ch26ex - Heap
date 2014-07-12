@@ -9,8 +9,7 @@ is through pointer variables.
 
 Allocated Heap = The heap memory used by your program
 
-Free Heap = Unallocated heap memory     */
-
+Free Heap = Unallocated heap memory
 
 
 Two Heap functions: malloc() and free().  malloc() = memory allocate
@@ -23,3 +22,44 @@ int * temp;   // Will point to the first heap value
 
 
 temps = (int *) malloc(10 * sizeof(int));     // If you just want 10 bytes, you could enter malloc(10);
+
+
+
+// int * is a typecast.  The * inside the typecast means that the typecast is a pointer typecast. 
+
+
+
+/* To convert a float value to an int, place (int) before the floating-point value. 
+Example: aVal = (int)salary;   */ 
+
+
+
+// If there is not enough Heap memory...follow malloc() with an "if" statement.
+//Example: 
+
+temps = (int *) malloc(10 * sizeof(int));
+if (temp == 0)
+{
+    printf("Oops! Not enough memory!\n");
+    exit(1);    // Terminate the program early
+}
+
+// Rest of the program would follow.
+
+
+
+// When you're done with the Heap memory, use 'free()' to give it back to the system. 
+
+// Example: 
+
+free(temps);      /* Gives the memory back to the heap.  */
+
+
+// Forgetting to call 'free()' defeats the purpose of using Heap memory in the first place. 
+
+
+
+
+
+
+
