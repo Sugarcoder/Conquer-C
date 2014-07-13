@@ -1,0 +1,108 @@
+// Structure = An aggregate variable data type
+
+// A structure (struct) can hold several values of different data types.
+
+// Before using the struct statement,
+// you must tell C exactly what the structure looks like.
+
+
+// Example:
+
+struct InvStruct
+{
+    char menu[25];      // member definition
+    char model[15];
+    int diskSpace;
+    int memSpace;
+    int ports;
+    int quantity;
+    float cost;
+    float price;
+};
+
+#include "InvStruct.h"
+#include<stdio.h>
+
+// main()  { struct InvStruct items[500];.....
+
+
+
+// Use the "->" (structure pointer operator) to access individual data members
+// within a structure pointed to (by a pointer variable).
+
+
+
+// Never use a member name as a variable.
+
+// Don't use the dot operator (.) the same time as the structure pointer operator (->).
+
+
+// Dot operator = structureVariableName.memberName
+
+
+// Example of Dot operator's use:
+
+
+#include "bookinfo.h"
+#include<stdio.h>
+
+main()
+{
+    int ctr;
+    struct bookInfo books[3];
+
+    for (ctr = 0; ctr < 3; ctr++)
+    {
+        printf("What is the name of the book #%d?\n", (ctr+1));
+        gets(books[ctr].title);
+
+        puts("Who is the author? ");
+        gets(books[ctr].author);
+
+        puts("How much did the book cost? ");
+        scanf(" $%f", &books[ctr].price);
+
+        puts("How many pages are in the book? ");
+        scanf(" %d", &books[ctr].pages);
+
+    }
+
+    return(0);
+
+}
+
+
+
+// Example of -> operator use:
+
+
+#include "bookinfo.h"
+#include<stdio.h>
+#include<stdlib.h>
+
+main()
+{
+    int ctr;
+    struct bookInfo * books[3];    // Array of three structure variables
+
+    for (ctr = 0; ctr < 3; ctr++)
+    {
+        books[ctr] = (struct bookInfo*)malloc(sizeof(struct bookInfo));
+        printf("What is the name of the book #%d?\n", (ctr+1));
+        gets(books[ctr]->title);
+
+        puts("Who is the author? ");
+        gets(books[ctr]->author);
+
+        puts("How much did the book cost? ");
+        scanf(" $%f", &books[ctr]->price);
+
+        puts("How many pages are in the book? ");
+        scanf(" %d", &books[ctr]->pages);
+
+        getchar();
+    }
+
+    return(0);
+
+}
