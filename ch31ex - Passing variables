@@ -1,0 +1,17 @@
+/* You don't want all functions to have access to all variables,
+because not every function needs access to every variable (if full access is needed, use global variables).
+
+To share data from function to function, you must pass variables from function to function. 
+
+
+When you pass a variable from one function to another, 
+you are passing an argument from the first function to the next.   */
+
+
+// 'Variable', 'argument' and 'parameter' are sometimes used interchangeably.   
+
+
+// There are 2 ways to pass arguments from one function to another: by value and by address.  
+
+
+
