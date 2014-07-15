@@ -43,3 +43,13 @@ float gradeAve(float test1, float test2, float test3)
 
     return (localAverage);    // Returns the average to the main
 }
+
+
+
+
+/*********************************************/
+
+
+// Never pass or return a global variable if you use one. Global variables don't have to be passed.
+
+// The parameter lists in the calling function, receiving function and prototype should match in both numbers and data types.
