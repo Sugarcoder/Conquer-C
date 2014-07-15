@@ -39,3 +39,17 @@ main()
     return(0);
 
 }
+
+
+
+/*******************************************************/
+
+
+
+half(int i)     // Receives the value of i
+{
+    i = i / 2;
+
+    printf("Your value halved is %d.\n", i);
+    return;    // Returns to main()
+}
