@@ -1,0 +1,1 @@
+// When you pass an array to another function, the array is passed by address.
