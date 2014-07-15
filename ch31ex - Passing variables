@@ -15,3 +15,27 @@ you are passing an argument from the first function to the next.   */
 
 
 
+// Example - Passing a variable to a function (by value) from main() to half():
+
+
+#include<stdio.h>
+
+main()
+{
+    int i;
+
+    printf("Please enter an integer...");
+    scanf(" %", &i);
+
+    // Now, call the half() function, passing the value of i
+
+
+    half(i);
+
+    // Shows that the function did not alter i's value
+
+    printf("In main(), 'i' is still %d.\n", i);
+
+    return(0);
+
+}
