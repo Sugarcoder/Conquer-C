@@ -17,7 +17,7 @@ main()
 
     int iAry[] = {10, 20, 30, 40, 50};
 
-    puts("\n\nHere are main()'s variables before the function:");
+    puts("Here are main()'s variables before the function:");
     printf("i is %d\n", i);
     printf("x is %.1f\n", x);
 
