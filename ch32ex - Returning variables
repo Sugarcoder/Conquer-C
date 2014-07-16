@@ -1,12 +1,13 @@
-// When a function is to return a value, use the 'return' statement to return the value.
+/* When a function is to return a value, use the 'return' statement to return the value.
 
-/* Example - Program showing functions returning a value by passing
- three floating-point numbers (grades) and calculating the average of the three.  */
+Example - Program showing functions returning a value by passing
+three floating-point numbers (grades) and calculating the average of the three.  */
 
 
 #include<stdio.h>
 
 float gradeAve(float test1, float test2, float test3);
+
 
 main()
 {
@@ -31,6 +32,8 @@ main()
     return 0;
 }
 
+
+
 /******************/
 
 
@@ -46,15 +49,14 @@ float gradeAve(float test1, float test2, float test3)
 
 
 
-
 /*********************************************/
 
 
-// Never pass or return a global variable if you use one. Global variables don't have to be passed.
+/* Never pass or return a global variable if you use one. Global variables don't have to be passed.
 
-// The parameter lists in the calling function, receiving function and prototype should match in both numbers and data types.
+The parameter lists in the calling function, receiving function and prototype should match in both numbers and data types.  */
 
 
 
-// Use 'void' if your function doesn't return a value or if it isn't passed a value.
-// Example:    void doSomething(void)       /*  Neither is passed nor returns  */
+Use 'void' if your function doesn't return a value or if it isn't passed a value.
+Example:    void doSomething(void)       /*  Neither is passed nor returns  */
